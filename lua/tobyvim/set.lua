@@ -5,4 +5,4 @@ vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]])
 
 vim.g.mapleader = " "
 vim.g.python3_host_prog = "/usr/bin/python3"
-vim.cmd('split term://bash')
+vim.cmd('split term://zsh')

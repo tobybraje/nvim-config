@@ -13,10 +13,10 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use({ 'rose-pine/neovim', as = 'rose-pine', config = function()
-  vim.cmd('colorscheme rose-pine')
-  end
-  })
+  --use({ 'rose-pine/neovim', as = 'rose-pine', config = function()
+  --vim.cmd('colorscheme rose-pine')
+  --end
+  --})
   use ('ThePrimeagen/harpoon')
   use ('mbbill/undotree')
   use ('tpope/vim-fugitive')
@@ -41,6 +41,8 @@ return require('packer').startup(function(use)
     {'L3MON4D3/LuaSnip'},     -- Required
   }
 }
+use {'mfussenegger/nvim-dap'}
+use {'mfussenegger/nvim-dap-python'}
   end)
 
 

@@ -1,3 +1,8 @@
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "<leader>dp", function() require('dap').toggle_breakpoint() end)
+vim.keymap.set("n", "<leader>dr", function() require('dap').continue() end)
+vim.keymap.set("n", "<leader>do", function() require('dap').repl.open() end)
+vim.keymap.set("n", "<leader>dc", function() require('dap').repl.close() end)
+vim.keymap.set("n", "<leader>pt", ":split term://zsh<CR>")
