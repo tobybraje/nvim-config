@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/Users/tobiasbraje/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["black-nvim"] = {
+    loaded = true,
+    path = "/Users/tobiasbraje/.local/share/nvim/site/pack/packer/start/black-nvim",
+    url = "https://github.com/averms/black-nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/Users/tobiasbraje/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
