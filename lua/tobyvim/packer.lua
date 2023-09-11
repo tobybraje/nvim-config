@@ -13,10 +13,10 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  --use({ 'rose-pine/neovim', as = 'rose-pine', config = function()
-  --vim.cmd('colorscheme rose-pine')
-  --end
-  --})
+  use({ 'rose-pine/neovim', as = 'rose-pine', config = function()
+  vim.cmd('colorscheme rose-pine')
+  end
+  })
   use ('ThePrimeagen/harpoon')
   use ('mbbill/undotree')
   use ('tpope/vim-fugitive')
@@ -45,6 +45,10 @@ use {'mfussenegger/nvim-dap'}
 use {'mfussenegger/nvim-dap-python'}
 use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
 use { "averms/black-nvim", run = ":UpdateRemotePlugins"}
+use {
+  'nvim-lualine/lualine.nvim',
+  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+}
   end)
 
 
