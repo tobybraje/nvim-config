@@ -6,6 +6,8 @@ vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]])
 vim.g.mapleader = " "
 vim.g.python3_host_prog = "/usr/bin/python3"
 vim.cmd('split term://bash')
+vim.cmd('set updatetime=100')
+vim.cmd('set clipboard=unnamedplus')
 require('lualine').setup {
   options = {
     icons_enabled = true,
