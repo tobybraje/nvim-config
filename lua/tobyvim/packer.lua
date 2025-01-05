@@ -56,6 +56,35 @@ use {
         require('Comment').setup()
     end
 }
+use {
+  'yetone/avante.nvim',
+  requires = {
+    'stevearc/dressing.nvim',
+    'nvim-lua/plenary.nvim',
+    'MunifTanjim/nui.nvim',
+    'nvim-tree/nvim-web-devicons',
+    'zbirenbaum/copilot.lua',
+    {
+      'HakonHarnes/img-clip.nvim',
+      config = function()
+        require('img-clip').setup()
+      end
+    },
+    {
+      'MeanderingProgrammer/render-markdown.nvim',
+      config = function()
+        require('render-markdown').setup({
+          file_types = { "markdown", "Avante" }
+        })
+      end
+    }
+  },
+  config = function()
+    require('copilot').setup()
+    require('avante_lib').load()
+    require('avante').setup()
+  end
+}
   end)
 
 
